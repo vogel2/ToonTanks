@@ -1,0 +1,11 @@
+/.vs
+/.vscode
+/Binaries
+/Config
+/Content
+/DerivedDataCache
+/Intermediate
+/Saved
+/ToonTanks.code-workspace
+/ToonTanks.sln
+/ToonTanks.uproject
