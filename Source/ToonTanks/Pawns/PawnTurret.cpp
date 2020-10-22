@@ -9,7 +9,7 @@ void APawnTurret::BeginPlay()
 {
 	Super::BeginPlay();
 
-    GetWorld()->GetTimerManager().SetTimer(FrameRateTimerHandle, this, &APawnTurret::CheckFireCondition, FireRate, true);
+    GetWorld()->GetTimerManager().SetTimer(FireRateTimerHandle, this, &APawnTurret::CheckFireCondition, FireRate, true);
 	
 }
 
@@ -19,8 +19,6 @@ void APawnTurret::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-    Rotate();
-    Move();
 }
 void APawnTurret::CheckFireCondition() 
 {
@@ -28,5 +26,5 @@ void APawnTurret::CheckFireCondition()
 
     // If Player IS in range THEN FIRE!!
 
-    UE_LOG(logTemp, Warning, TEXT("Fire Condition, check!"));
+    UE_LOG(LogTemp, Warning, TEXT("Fire Condition, check!"));
 }

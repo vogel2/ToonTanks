@@ -3,7 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Pawns/PawnBase.h"
+#include "PawnBase.h"
 #include "PawnTurret.generated.h"
 
 /**
@@ -31,5 +31,4 @@ public:
 protected: 
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	
 };
