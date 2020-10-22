@@ -2,6 +2,7 @@
 
 
 #include "PawnTurret.h"
+#include "PawnTank.h"
 #include "Kismet/GameplayStatics.h"
 
 // Called when the game starts or when spawned 
@@ -46,6 +47,5 @@ float APawnTurret::ReturnDistanceToPlayer()
         return 0.f;
     }
 
-    float Distance = FVector::Dist(PlayerPawn->GetActorLocation(), GetActorLocation());
-    return Distance;
+    return FVector::Dist(PlayerPawn->GetActorLocation(), GetActorLocation());
 }
